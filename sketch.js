@@ -43,7 +43,7 @@ function draw() {
   textSize(35)
   text("VIRTUAL PET",140,50)
   //Food.display()
-  fedTime=database.ref('/')
+  fedTime=database.ref('fedTime')
   fedTime.on("value",function(data){
     lastfed=data.val()
   })
